@@ -68,15 +68,15 @@ def removecol(df):
 def imputer(df,strategy='mean'):
     
     df_cat= df.select_dtypes(exclude=['int64','float64','uint'])
+    df_num= df.select_dtypes(include=['int64','float64','uint'])
 
     imputation= SimpleImputer(strategy=strategy)
     
     df_imputed = pd.DataFrame(imputation.fit_transform(df_cat), columns=df_cat.columns)
     
-    df_imput= pd.concat([df,df_imputed],axis=1)
+    df_imput= pd.concat([df_num, df_imputed],axis=1)
     
     return df_imput
-
 
 # In[21]:
 
