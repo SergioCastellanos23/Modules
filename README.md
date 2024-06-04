@@ -1,5 +1,5 @@
 # Modules
-Módulos encargados de la limpieza, transformación, detección de outliers para la reutilización de código en diversos proyectos reduciendo el tiempo de procesamiento
+Módulos hechos con lenguaje Python en mis tareas cotidianas, encargados de la limpieza, transformación, detección de outliers para la reutilización de código en diversos proyectos reduciendo el tiempo de procesamiento
 
 ## Módulos análisis.
 
